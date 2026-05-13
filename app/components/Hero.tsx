@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { FiLinkedin, FiMail, FiPhone } from "react-icons/fi";
 import Image from "next/image";
 
 const floatingBadges = [
@@ -142,7 +142,7 @@ export default function Hero() {
           {[
             { href: "mailto:gzmanchev@gmail.com", icon: <FiMail size={19} />, label: "Email" },
             { href: "https://linkedin.com/in/georgi-manchev97", icon: <FiLinkedin size={19} />, label: "LinkedIn" },
-            { href: "https://github.com", icon: <FiGithub size={19} />, label: "GitHub" },
+            { href: "tel:+359893679751", icon: <FiPhone size={19} />, label: "Call" },
           ].map((item) => (
             <a key={item.label} href={item.href} target="_blank" rel="noopener noreferrer"
               className="p-2 rounded-lg transition-all duration-200 hover:scale-110"

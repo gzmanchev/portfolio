@@ -6,7 +6,7 @@ import AnimatedSection from "./AnimatedSection";
 const contacts = [
   { icon: <FiMail size={20} />, label: "Email", value: "gzmanchev@gmail.com", href: "mailto:gzmanchev@gmail.com" },
   { icon: <FiLinkedin size={20} />, label: "LinkedIn", value: "georgi-manchev97", href: "https://linkedin.com/in/georgi-manchev97" },
-  { icon: <FiPhone size={20} />, label: "Phone", value: "+359 893 679 751", href: "tel:+359893679751" },
+  { icon: <FiPhone size={20} />, label: "Call me", value: "+359 893 679 751", href: "tel:+359893679751" },
 ];
 
 export default function Contact() {

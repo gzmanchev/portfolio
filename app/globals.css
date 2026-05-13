@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { scroll-behavior: smooth; box-sizing: border-box; }
+
+:root {
+  --bg: #07070f;
+  --bg-alt: #0b0b16;
+  --card: #0e0e1a;
+  --border: rgba(124, 58, 237, 0.12);
+  --text: #f0f0ff;
+  --muted: #b0b0cc;
+  --badge-bg: rgba(124, 58, 237, 0.12);
+  --badge-border: rgba(124, 58, 237, 0.35);
+  --badge-text: #c4b5fd;
+  --accent: #a855f7;
+}
+
+.light {
+  --bg: #fafafa;
+  --bg-alt: #f0f0f8;
+  --card: #ffffff;
+  --border: rgba(124, 58, 237, 0.15);
+  --text: #0a0a1a;
+  --muted: #555577;
+  --badge-bg: rgba(109, 40, 217, 0.08);
+  --badge-border: rgba(109, 40, 217, 0.4);
+  --badge-text: #6d28d9;
+  --accent: #7c3aed;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', Arial, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #7c3aed, #a855f7, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-glow:hover {
+  box-shadow: 0 0 32px rgba(124, 58, 237, 0.18), 0 8px 40px rgba(0, 0, 0, 0.25);
+}
+
+.stat-number {
+  text-shadow: 0 0 24px rgba(168, 85, 247, 0.65);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-7px); }
+}

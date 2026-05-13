@@ -64,7 +64,7 @@ export default function Hero() {
       </div>
 
       {/* Main content */}
-      <motion.div style={{ y: yContent, opacity }} className="relative z-10 max-w-3xl">
+      <motion.div style={{ opacity }} className="relative z-10 max-w-3xl">
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}

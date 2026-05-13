@@ -25,9 +25,12 @@ export default function Navbar() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b transition-colors duration-300 ${isDark ? "bg-[#080808]/90 border-white/5" : "bg-white/90 border-black/5"}`}>
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
-        <a href="#hero" className={`font-bold text-lg tracking-tight ${isDark ? "text-white" : "text-gray-900"}`}>
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className={`font-bold text-lg tracking-tight cursor-pointer ${isDark ? "text-white" : "text-gray-900"}`}
+        >
           GM<span className="text-indigo-400">.</span>
-        </a>
+        </button>
 
         <ul className="hidden md:flex items-center gap-8">
           {links.map((link) => (

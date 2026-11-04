@@ -3,11 +3,12 @@
 import AnimatedSection from "./AnimatedSection";
 
 const skillGroups = [
-  { category: "Frontend", skills: ["React", "TypeScript", "JavaScript", "AngularJS", "HTML", "CSS", "SASS"] },
+  { category: "Frontend", skills: ["React", "TypeScript", "JavaScript", "Angular", "AngularJS", "HTML", "CSS", "SASS"] },
   { category: "Styling", skills: ["Tailwind CSS", "MUI", "Bootstrap"] },
-  { category: "State Management", skills: ["Redux", "Redux Toolkit"] },
-  { category: "Testing", skills: ["Jest", "Cypress"] },
-  { category: "Tools & Libraries", skills: ["Git", "REST APIs", "Next.js", "Webpack", "React Hook Form"] },
+  { category: "State Management", skills: ["Redux", "Redux Toolkit", "Context API"] },
+  { category: "Testing", skills: ["Jest", "Cypress", "Selenium"] },
+  { category: "Backend", skills: ["Node.js", "Python", "REST APIs", "Prisma", "PostgreSQL", "NextAuth"] },
+  { category: "Tools & Libraries", skills: ["Git", "GraphQL", "Next.js", "Webpack", "React Hook Form", "Netlify", "Vercel"] },
 ];
 
 export default function Skills() {
